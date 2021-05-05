@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Irista.Data
+namespace Irista.ApiControllers
 {
     public class Class1
     {
