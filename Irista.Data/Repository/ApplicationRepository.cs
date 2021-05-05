@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Irista.Data.Entities
+namespace Irista.Data.Repository
 {
-    public class Comment : BaseEntity
+    public class ApplicationRepository
     {
     }
 }

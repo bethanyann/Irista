@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Irista.Data.Entities
 {
-    public class Metadata
+    public class Metadata : BaseEntity
     {
     }
 }
