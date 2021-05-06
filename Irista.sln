@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irista.Web", "Irista.Web\Irista.Web.csproj", "{3267A490-49B2-426D-8882-766723578C16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.Web", "Irista.Web\Irista.Web.csproj", "{3267A490-49B2-426D-8882-766723578C16}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C95C4047-C866-4C03-98BD-1F7FC70B8289} = {C95C4047-C866-4C03-98BD-1F7FC70B8289}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irista.Data", "Irista.Data\Irista.Data.csproj", "{24E909D5-0562-470C-936A-3C9055A07E7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.Data", "Irista.Data\Irista.Data.csproj", "{24E909D5-0562-470C-936A-3C9055A07E7C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployable projects", "deployable projects", "{4B2A7AAA-E719-4728-A062-07629D181833}"
 EndProject
