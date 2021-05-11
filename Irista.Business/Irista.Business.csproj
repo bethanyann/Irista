@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Irista.ApiControllers\Irista.ApiControllers.csproj" />
     <ProjectReference Include="..\Irista.Data\Irista.Data.csproj" />
     <ProjectReference Include="..\Irista.POCO\Irista.POCO.csproj" />
   </ItemGroup>

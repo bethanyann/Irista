@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Irista.Data.Repository
 {
-    public class ApplicationRepository
+    public class ApplicationRepository 
     {
         public IRepository<string,Photo> Photos { get; set; }
         public IRepository<string,Album> Albums { get; set; }
@@ -17,19 +17,22 @@ namespace Irista.Data.Repository
         public IRepository<string,Location> Location { get; set; }
         public IRepository<string,Comment> Comments { get; set; }
 
+        private readonly ApplicationDbContext _context;
+
         public ApplicationRepository(ApplicationDbContext ctx, IHttpContextAccessor contextAccessor) 
         {
-
+            _context = ctx;
         }
 
         public ApplicationRepository(ApplicationDbContext ctx) 
         {
-            InitializeRepository();
+            _context = ctx;
+            InitializeRepository(ctx);
         }
 
-        public void InitializeRepository()
+        public void InitializeRepository(ApplicationDbContext ctx)
         {
-            //Photos = new Repository<string,Photo>(Context);
+            Photos = new Repository<string,Photo>(ctx);
         }
     }
 }

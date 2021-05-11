@@ -1,10 +1,8 @@
 ﻿using Irista.Business.Builders;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Irista.Business.Dependency_Injection
+
+namespace Irista.Business.DependencyInjection
 {
     public static class BuilderRegistrationExtension
     {

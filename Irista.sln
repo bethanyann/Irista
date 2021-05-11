@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.Web", "Irista.Web\Irista.Web.csproj", "{3267A490-49B2-426D-8882-766723578C16}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C95C4047-C866-4C03-98BD-1F7FC70B8289} = {C95C4047-C866-4C03-98BD-1F7FC70B8289}
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.Data", "Irista.Data\Irista.Data.csproj", "{24E909D5-0562-470C-936A-3C9055A07E7C}"
 EndProject
@@ -14,14 +11,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployable projects", "depl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1EF3BEC3-27EC-4A7B-820E-EB3107B17C60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irista.ApiControllers", "Irista.ApiControllers\Irista.ApiControllers.csproj", "{C95C4047-C866-4C03-98BD-1F7FC70B8289}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irista.Business", "Irista.Business\Irista.Business.csproj", "{BE7E952C-E8AD-410D-9D6A-F479B2746F72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.Business", "Irista.Business\Irista.Business.csproj", "{BE7E952C-E8AD-410D-9D6A-F479B2746F72}"
 	ProjectSection(ProjectDependencies) = postProject
 		{24E909D5-0562-470C-936A-3C9055A07E7C} = {24E909D5-0562-470C-936A-3C9055A07E7C}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irista.POCO", "Irista.POCO\Irista.POCO.csproj", "{7BB360C8-95C4-4D1C-A466-06E1B29C7C9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.POCO", "Irista.POCO\Irista.POCO.csproj", "{7BB360C8-95C4-4D1C-A466-06E1B29C7C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irista.ApiControllers", "Irista.ApiControllers\Irista.ApiControllers.csproj", "{5E42908B-3A9F-445F-A93F-DD7C80B3D447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +34,6 @@ Global
 		{24E909D5-0562-470C-936A-3C9055A07E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24E909D5-0562-470C-936A-3C9055A07E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24E909D5-0562-470C-936A-3C9055A07E7C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C95C4047-C866-4C03-98BD-1F7FC70B8289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C95C4047-C866-4C03-98BD-1F7FC70B8289}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C95C4047-C866-4C03-98BD-1F7FC70B8289}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C95C4047-C866-4C03-98BD-1F7FC70B8289}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE7E952C-E8AD-410D-9D6A-F479B2746F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BE7E952C-E8AD-410D-9D6A-F479B2746F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE7E952C-E8AD-410D-9D6A-F479B2746F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,6 +42,10 @@ Global
 		{7BB360C8-95C4-4D1C-A466-06E1B29C7C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BB360C8-95C4-4D1C-A466-06E1B29C7C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BB360C8-95C4-4D1C-A466-06E1B29C7C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E42908B-3A9F-445F-A93F-DD7C80B3D447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E42908B-3A9F-445F-A93F-DD7C80B3D447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E42908B-3A9F-445F-A93F-DD7C80B3D447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E42908B-3A9F-445F-A93F-DD7C80B3D447}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,9 +53,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3267A490-49B2-426D-8882-766723578C16} = {4B2A7AAA-E719-4728-A062-07629D181833}
 		{24E909D5-0562-470C-936A-3C9055A07E7C} = {1EF3BEC3-27EC-4A7B-820E-EB3107B17C60}
-		{C95C4047-C866-4C03-98BD-1F7FC70B8289} = {1EF3BEC3-27EC-4A7B-820E-EB3107B17C60}
 		{BE7E952C-E8AD-410D-9D6A-F479B2746F72} = {1EF3BEC3-27EC-4A7B-820E-EB3107B17C60}
 		{7BB360C8-95C4-4D1C-A466-06E1B29C7C9A} = {1EF3BEC3-27EC-4A7B-820E-EB3107B17C60}
+		{5E42908B-3A9F-445F-A93F-DD7C80B3D447} = {1EF3BEC3-27EC-4A7B-820E-EB3107B17C60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19083DFB-2197-44A0-9560-63E69DB92A95}

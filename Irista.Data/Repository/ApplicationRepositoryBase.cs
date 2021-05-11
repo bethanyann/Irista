@@ -8,6 +8,7 @@ namespace Irista.Data.Repository
     //this is going to be like the "Unit of work" in mosh's project
     public abstract class ApplicationRepositoryBase<TDbContext>
     {
+        //took this out and put all of it in the Repository class for now because it was getting messy. 
         protected ApplicationRepositoryBase(TDbContext ctx) { }
         TDbContext Context { get; set; }
 

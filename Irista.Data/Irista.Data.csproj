@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="EntityFluentAPIConfigurations-unused\**" />
+    <Compile Remove="Enums\**" />
+    <EmbeddedResource Remove="EntityFluentAPIConfigurations-unused\**" />
+    <EmbeddedResource Remove="Enums\**" />
+    <None Remove="EntityFluentAPIConfigurations-unused\**" />
+    <None Remove="Enums\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Repository\ApplicationRepositoryBase.cs" />
   </ItemGroup>
 
@@ -16,11 +25,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="EntityFluentAPIConfigurations-unused\" />
-    <Folder Include="Enums\" />
   </ItemGroup>
 
 </Project>
