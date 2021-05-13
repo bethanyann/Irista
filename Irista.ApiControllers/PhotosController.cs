@@ -9,6 +9,7 @@ namespace Irista.ApiControllers
 {
     [Authorize]
     [Route("api/Photos")]
+    [ApiController]
     public class PhotosController : Controller
     {
         private readonly PhotoBuilder _photoBuilder;
