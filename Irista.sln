@@ -20,6 +20,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.POCO", "Irista.POCO\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irista.ApiControllers", "Irista.ApiControllers\Irista.ApiControllers.csproj", "{5E42908B-3A9F-445F-A93F-DD7C80B3D447}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irista.WebApp", "Irista.WebApp\Irista.WebApp.csproj", "{68EC7172-449A-412E-9F6D-DEA3F4AA3F91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{5E42908B-3A9F-445F-A93F-DD7C80B3D447}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E42908B-3A9F-445F-A93F-DD7C80B3D447}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E42908B-3A9F-445F-A93F-DD7C80B3D447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68EC7172-449A-412E-9F6D-DEA3F4AA3F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EC7172-449A-412E-9F6D-DEA3F4AA3F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EC7172-449A-412E-9F6D-DEA3F4AA3F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EC7172-449A-412E-9F6D-DEA3F4AA3F91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{BE7E952C-E8AD-410D-9D6A-F479B2746F72} = {1EF3BEC3-27EC-4A7B-820E-EB3107B17C60}
 		{7BB360C8-95C4-4D1C-A466-06E1B29C7C9A} = {1EF3BEC3-27EC-4A7B-820E-EB3107B17C60}
 		{5E42908B-3A9F-445F-A93F-DD7C80B3D447} = {1EF3BEC3-27EC-4A7B-820E-EB3107B17C60}
+		{68EC7172-449A-412E-9F6D-DEA3F4AA3F91} = {4B2A7AAA-E719-4728-A062-07629D181833}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19083DFB-2197-44A0-9560-63E69DB92A95}
