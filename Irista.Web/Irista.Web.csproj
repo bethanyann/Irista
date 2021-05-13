@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Irista.Data\Irista.Data.csproj" />
+    <ProjectReference Include="..\Irista.ApiControllers\Irista.ApiControllers.csproj" />
+    <ProjectReference Include="..\Irista.Business\Irista.Business.csproj" />
   </ItemGroup>
 
 </Project>

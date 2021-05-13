@@ -5,17 +5,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="EntityFluentAPIConfigurations-unused\**" />
+    <Compile Remove="Enums\**" />
+    <EmbeddedResource Remove="EntityFluentAPIConfigurations-unused\**" />
+    <EmbeddedResource Remove="Enums\**" />
+    <None Remove="EntityFluentAPIConfigurations-unused\**" />
+    <None Remove="Enums\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Repository\ApplicationRepositoryBase.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="EntityFluentAPIConfigurations-unused\" />
-    <Folder Include="Enums\" />
   </ItemGroup>
 
 </Project>

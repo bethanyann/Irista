@@ -8,6 +8,11 @@ namespace Irista.Data.Entities
 {
     public class Photo : BaseEntity
     {
+        public Photo()
+        {
+
+        }
+
         //Foreign Keys
         [ForeignKey("Location")]
         public string LocationId { get; set; }

@@ -1,15 +1,13 @@
 using Irista.Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Irista.Data.Repository;
+using Irista.Business.DependencyInjection;
 
 namespace Irista.Web
 {
@@ -32,6 +30,8 @@ namespace Irista.Web
                 options.UseSqlServer(Configuration.GetConnectionString("Default"), opt => opt.CommandTimeout((int)TimeSpan.FromMinutes(5).TotalSeconds));
             });
 
+            services.AddScoped<ApplicationRepository>();
+            services.AddBuildersToServiceProvider();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
