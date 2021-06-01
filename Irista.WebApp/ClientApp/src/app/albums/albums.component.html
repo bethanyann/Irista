@@ -1,19 +1,9 @@
-﻿(function () {
-    'use strict';
+<h1>Albums</h1>
 
-    angular
-        .module('app')
-        .factory('albums', albums);
+<p>This will be a 4-column layout at full-size, down to 1 column for small phones that will list the albums.
+  Will have the option to filter by name, but default will be by date.</p>
 
-    albums.$inject = ['$http'];
 
-    function albums($http) {
-        var service = {
-            getData: getData
-        };
+<p>first square will always be an empty square with a + symbol that says "add new album"</p>
 
-        return service;
 
-        function getData() { }
-    }
-})();

@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AlbumsComponent } from './albums/albums.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    AlbumsComponent
+    AlbumsComponent,
+    PhotosComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -28,7 +30,8 @@ import { AlbumsComponent } from './albums/albums.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'albums', component: AlbumsComponent}
+      { path: 'albums', component: AlbumsComponent },
+      { path: 'photos', component: PhotosComponent}
     ])
   ],
   providers: [],
