@@ -1,10 +1,16 @@
+using Irista.Business.DependencyInjection;
+using Irista.Data.Context;
+using Irista.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+
 
 namespace Irista.WebApp
 {
@@ -21,6 +27,14 @@ namespace Irista.WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<ApplicationDbContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("Default"), opt => opt.CommandTimeout((int)TimeSpan.FromMinutes(5).TotalSeconds));
+            });
+
+            services.AddScoped<ApplicationRepository>();
+            services.AddBuildersToServiceProvider();
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {

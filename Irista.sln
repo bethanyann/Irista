@@ -18,9 +18,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.Business", "Irista.B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.POCO", "Irista.POCO\Irista.POCO.csproj", "{7BB360C8-95C4-4D1C-A466-06E1B29C7C9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irista.ApiControllers", "Irista.ApiControllers\Irista.ApiControllers.csproj", "{5E42908B-3A9F-445F-A93F-DD7C80B3D447}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.ApiControllers", "Irista.ApiControllers\Irista.ApiControllers.csproj", "{5E42908B-3A9F-445F-A93F-DD7C80B3D447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Irista.WebApp", "Irista.WebApp\Irista.WebApp.csproj", "{68EC7172-449A-412E-9F6D-DEA3F4AA3F91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Irista.WebApp", "Irista.WebApp\Irista.WebApp.csproj", "{68EC7172-449A-412E-9F6D-DEA3F4AA3F91}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BE7E952C-E8AD-410D-9D6A-F479B2746F72} = {BE7E952C-E8AD-410D-9D6A-F479B2746F72}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

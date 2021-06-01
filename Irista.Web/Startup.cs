@@ -6,8 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using Irista.Data.Repository;
 using Irista.Business.DependencyInjection;
+using Irista.Data.Repository;
 
 namespace Irista.Web
 {
