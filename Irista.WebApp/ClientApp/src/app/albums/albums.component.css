@@ -17,3 +17,10 @@
         function getData() { }
     }
 })();*/
+.photo-square {
+    width: auto;
+    height: auto;
+    background: darkgray;
+    border-radius: 25px;
+    padding: 20px;
+}
